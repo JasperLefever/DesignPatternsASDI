@@ -196,3 +196,5 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
    > ```
 
    ![Decorator](Decorator2.png)
+
+# [TERUG NAAR INHOUDSOPGAVE](../README.md)

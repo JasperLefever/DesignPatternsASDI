@@ -180,3 +180,5 @@ Een voorbeeld van een state pattern is een automaat. Een automaat kan verschille
 
 > Andere UML zelfde principe
 > ![State](State2.png)
+
+# [TERUG NAAR INHOUDSOPGAVE](../README.md)

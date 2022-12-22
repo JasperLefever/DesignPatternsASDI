@@ -89,3 +89,5 @@ We hebben een class Duck die een methode quacken fly heeft. Maar er kunnen ook D
    ```
 
    ![Strategy](StrategyDucks.png)
+
+# [TERUG NAAR INHOUDSOPGAVE](../README.md)

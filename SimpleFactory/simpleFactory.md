@@ -77,3 +77,5 @@ Je hebt een pizza winkel. Je hebt verschillende soorten pizza's. En je wilt nieu
 ![Simple Factory](SimpleFactory.png)
 
 > andere pizza soorten gebruikt dan uml
+
+# [TERUG NAAR INHOUDSOPGAVE](../README.md)
