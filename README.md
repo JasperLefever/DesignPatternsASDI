@@ -18,6 +18,8 @@
 
 ## [State Pattern](State/state.md)
 
+## TODO ADD STATE DIAGRAM
+
 ---
 
 ## [Facade Pattern](Facade/facade.md)
