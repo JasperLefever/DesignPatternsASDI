@@ -126,6 +126,7 @@ Je hebt een weerstation. Je wilt dat de temperatuur, luchtvochtigheid en luchtdr
            }
    }
    ```
+
    > output:
    >
    > ```
@@ -133,5 +134,7 @@ Je hebt een weerstation. Je wilt dat de temperatuur, luchtvochtigheid en luchtdr
    > Current conditions: 82.0F degrees and 70.0% humidity
    > Current conditions: 78.0F degrees and 90.0% humidity
    > ```
+
+   ![Observer](Observer2.png)
 
 # [TERUG NAAR INHOUDSOPGAVE](../README.md)

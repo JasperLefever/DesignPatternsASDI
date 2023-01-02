@@ -21,6 +21,9 @@ Een voorbeeld van een state pattern is een automaat. Een automaat kan verschille
 
 ![State](State.png)
 
+> Je moet state diagram kunnen opstellen
+> ![State](Screenshot%202023-01-02%20095713.png)
+
 ### Voorbeeld Vervolg
 
 > stappen komen overeen met de stappen in de algemene oplossing
