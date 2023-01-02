@@ -20,14 +20,14 @@
 
 ---
 
-## [Facade Pattern](Facade/facade.md)
+## Facade Pattern
 
 -> is een wrapper voor een complexe klasse
 -> Youtube en cursus kan nietveel over uitleggen
 
 ---
 
-## [MVC (Pattern)](MVC/mvc.md)
+## MVC (Pattern)
 
 -> niet echt een pattern maar een combinatie van patterns
 -> Youtube en cursus kan nietveel over uitleggen
