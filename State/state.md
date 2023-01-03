@@ -62,9 +62,17 @@ Een voorbeeld van een state pattern is een automaat. Een automaat kan verschille
                   this.automaat = automaat;
             }
 
-            public abstract void insertCoin();
-            public abstract void pushButton();
-            public abstract void takeCup();
+            public void insertCoin(){
+                  return "Je kunt geen geld invoeren"
+            }
+
+            public void pushButton(){
+                  return "je kunt niet op de knop drukken"
+            }
+
+            public void takeCup(){
+                  return "je moet eerst betaald hebben en op klaarmaken drukken"
+            }
       }
     ```
 
@@ -80,16 +88,6 @@ Een voorbeeld van een state pattern is een automaat. Een automaat kan verschille
                   Geld is ingevoerd");
                   automaat.setState(new GeldState(automaat));
             }
-
-            @Override
-            public void pushButton() {
-                  System.out.println("Geen geld ingevoerd");
-            }
-
-            @Override
-            public void takeCup() {
-                  System.out.println("Geen geld ingevoerd");
-            }
       }
     ```
 
@@ -98,11 +96,6 @@ Een voorbeeld van een state pattern is een automaat. Een automaat kan verschille
        public GeldState(KoffieAutomaat automaat) {
        super(automaat);
        }
-
-                @Override
-                public void insertCoin() {
-                      System.out.println("Geld is al ingevoerd");
-                }
 
                 @Override
                 public void pushButton() {
@@ -126,20 +119,11 @@ Een voorbeeld van een state pattern is een automaat. Een automaat kan verschille
       }
 
       @Override
-      public void insertCoin() {
-         System.out.println("Koffie wordt reeds gemaakt");
-      }
-
-      @Override
-      public void pushButton() {
-         System.out.println("Koffie wordt gemaakt");
-         automaat.setState(new KoffieKlaarState(automaat));
-      }
-
-      @Override
       public void takeCup() {
          System.out.println("Koffie wordt gemaakt wacht tot hij klaar is");
+         automaat.setState(new KoffieKlaarState(automaat))
       }
+
     }
     ```
 
@@ -148,16 +132,6 @@ Een voorbeeld van een state pattern is een automaat. Een automaat kan verschille
     public class KoffieKlaarState extends AutomaatState {
       public KoffieKlaarState(KoffieAutomaat automaat) {
          super(automaat);
-      }
-
-      @Override
-      public void insertCoin() {
-         System.out.println("Koffie is klaar neem je geld terug");
-      }
-
-      @Override
-      public void pushButton() {
-         System.out.println("Koffie is klaar neem je geld terug");
       }
 
       @Override
