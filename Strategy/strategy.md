@@ -6,15 +6,15 @@ We hebben een class die een bepaalde methode heeft. We willen de methode kunnen 
 
 ### Voorbeeld
 
-We hebben een class Duck die een methode quacken fly heeft. Maar er kunnen ook Duck's zijn die niet kunnen vliegen of niet kunnen kwaken. We willen de methode kunnen veranderen zonder de class Duck aan te hoeven passen.
+We hebben een class Duck die een methode quack en fly heeft. Maar er kunnen ook Duck's zijn die niet kunnen vliegen of niet kunnen kwaken. We willen de methode kunnen veranderen zonder de class Duck aan te hoeven passen.
 
 ### Oplosovereensing - Algemeen
 
 1. We maken een interface met een bepaald gedrag (behaviour/strategy).
 2. We maken een specifieke klasse (concrete behaviour/strategy) die het gedrag implementeert.
 3. We maken een klasse (client) die het gedrag implementeerd.
-4. Methode injectie van het specifieke gedrag in de klasse die het gedrag implementeerd. (constructor of setter)
-5. Mogelijke subklassen maken van de klasse die het gedrag implementeerd.
+4. Methode injectie van het specifieke gedrag in de klasse die het gedrag implementeert. (constructor of setter)
+5. Mogelijke subklassen maken van de klasse die het gedrag implementeert.
 
    ![Strategy](Strategy.png)
 
@@ -44,7 +44,7 @@ We hebben een class Duck die een methode quacken fly heeft. Maar er kunnen ook D
    ```
 
 3. ```java
-   public class Duck implements FlyBehaviour {
+   public class Duck {
         private FlyBehaviour flyBehaviour;
 
     }
@@ -52,12 +52,13 @@ We hebben een class Duck die een methode quacken fly heeft. Maar er kunnen ook D
    ```
 
 4. ```java
-   public class Duck implements FlyBehaviour{
+   public class Duck {
         private FlyBehaviour flyBehaviour;
 
         // met constructorinjectie -> kies 1 van de 2
         public Duck(FlyBehaviour flyBehaviour) {
             this.flyBehaviour = flyBehaviour;
+            setFlyBehaviour(flyBehaviour); // indien setterinjectie
         }
 
         // met setterinjectie
