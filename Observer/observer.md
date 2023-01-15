@@ -52,7 +52,7 @@ Je hebt een weerstation. Je wilt dat de temperatuur, luchtvochtigheid en luchtdr
 
         @Override
         public void removeObserver(Observer o) {
-            observers.remove(i);
+            observers.remove(o);
 
         }
 
