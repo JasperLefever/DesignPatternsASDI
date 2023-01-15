@@ -38,7 +38,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
    public abstract class CondimentDecorator extends Beverage {
          private Beverage beverage;
 
-         CondimentDecorator(Beverage beverage) {
+         public CondimentDecorator(Beverage beverage) {
                this.beverage = beverage;
          }
 
@@ -52,7 +52,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
 
 3. ```java
    public class Milk extends CondimentDecorator {
-         Milk(Beverage beverage) {
+         public Milk(Beverage beverage) {
                super(beverage);
          }
 
@@ -70,7 +70,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
 
    ```java
    public class Sugar extends CondimentDecorator {
-         Sugar(Beverage beverage) {
+         public Sugar(Beverage beverage) {
                super(beverage);
          }
 
@@ -88,7 +88,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
 
    ```java
    public class Whip extends CondimentDecorator {
-         Whip(Beverage beverage) {
+         public Whip(Beverage beverage) {
                super(beverage);
          }
 
@@ -106,7 +106,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
 
 4. ```java
    public class Espresso extends Beverage {
-         Espresso() {
+         public Espresso() {
                super();
                super.description = "Espresso";
          }
@@ -120,7 +120,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
 
    ```java
    public class Decaf extends Beverage {
-         Decaf() {
+         public Decaf() {
                super();
                super.description = "Decaf";
          }
@@ -134,7 +134,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
 
    ```java
    public class Tea extends Beverage {
-         Tea() {
+         public Tea() {
                super();
                super.description = "Tea";
          }
@@ -148,7 +148,7 @@ Je hebt een koffiezaak met allemaal soorten dranken(esspresso, decaf, chocomelk,
 
    ```java
    public class HotChocolate extends Beverage {
-         HotChocolate() {
+         public HotChocolate() {
                super();
                super.description = "Hot Chocolate";
          }
