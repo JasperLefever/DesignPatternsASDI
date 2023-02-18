@@ -8,7 +8,7 @@ We hebben een class die een bepaalde methode heeft. We willen de methode kunnen 
 
 We hebben een class Duck die een methode quack en fly heeft. Maar er kunnen ook Duck's zijn die niet kunnen vliegen of niet kunnen kwaken. We willen de methode kunnen veranderen zonder de class Duck aan te hoeven passen.
 
-### Oplosovereensing - Algemeen
+### Oplossing - Algemeen
 
 1. We maken een interface met een bepaald gedrag (behaviour/strategy).
 2. We maken een specifieke klasse (concrete behaviour/strategy) die het gedrag implementeert.
