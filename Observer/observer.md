@@ -56,7 +56,7 @@ Je hebt een weerstation. Je wilt dat de temperatuur, luchtvochtigheid en luchtdr
 
         }
 
-        public void notifyObservers() {
+        private void notifyObservers() {
             observers.forEach(o -> o.update(temperature, humidity, pressure));
         }
 
